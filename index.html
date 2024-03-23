@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Калькулятор доставки</h2>
+        <h3>Отправитель</h3>
+        <label for="senderFirstName">Имя отправителя:</label>
+        <input type="text" id="senderFirstName" required><br><br>
+        <label for="senderLastName">Фамилия отправителя:</label>
+        <input type="text" id="senderLastName" required><br><br>
+        <label for="senderMiddleName">Отчество отправителя:</label>
+        <input type="text" id="senderMiddleName"><br><br>
+        <h3>Получатель</h3>
+        <label for="recipientFirstName">Имя получателя:</label>
+        <input type="text" id="recipientFirstName" required><br><br>
+        <label for="recipientLastName">Фамилия получателя:</label>
+        <input type="text" id="recipientLastName" required><br><br>
+        <label for="recipientMiddleName">Отчество получателя:</label>
+        <input type="text" id="recipientMiddleName"><br><br>
+        <label for="weight">Вес посылки (кг):</label>
+        <input type="number" id="weight" min="0" step="0.1" required><br><br>
+        <label for="shippingType">Тип доставки:</label>
+        <select id="shippingType">
+            <option value="regular">Обычная</option>
+            <option value="express">Экспресс</option>
+        </select><br><br>
+        <label for="country">Страна доставки:</label>
+        <select id="country">
+            <option value="USA">США</option>
+            <option value="Canada">Канада</option>
+            <option value="UK">Великобритания</option>
+        </select><br><br>
+        <button onclick="calculateShipping()">Рассчитать стоимость доставки</button>
+    </div>
+        
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Результаты доставки</h2>
+            <div id="results"></div>
+        </div>
+    </div>
+
+</body>
+</html>

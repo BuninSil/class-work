@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-senif; 
+    background-color: #111; /* Темный фон */ 
+    color: #ffffff; /* Белый текст */
+    }
+    .container { width: 50%; margin: 50px auto;
+    background-color: transparent; /* Прозрачный фон */ 
+    border-radius: 15px; /* Округление углов */ padding: 20px;
+    }
+    label {
+    font-weight: bold;
+    }
+    input, select, button { margin-bottom: 10px;
+    background-color: transparent; /* Прозрачный фон для input, select и button */
+    color: #ffffff; /* Белый текст */
+    border: 2px solid #ffffff; /* Белая обводка */
+    border-radius: 15px; /* Округление углов */
+    padding: 8px;
+    }
+    button {
+    padding: 10px 20px;
+    background-color: transparent; /* Прозрачный фон для кнопки */ cursor: pointer;
+    }
+    button:hover {
+    background-color: #ffffff; /* Белый фон при наведении */ color: #333333; /* Цвет текста при наведении */
+    }
+    /* Модальное окно стили */
+    .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; color: #111;
+    background-color: rgba(0,0,0,0.A); /* Полупрозрачный черный фон */
+    }
+    .modal-content {
+    background-color: #fefefe; /* Белый фон модального окна */
+    margin: 15% auto;
+    padding: 20px;
+    border: lpx solid #888;
+    width: 80%;
+    border-radius: 15px; /* Скругление углов */
+    }
+    .close {
+    color: #aaaaaa; /* Серый цвет для кнопки закрытия */ float: right; font-size: 28px; font-weight: bold;
+    }
+    .close:hover,
+    .close:focus { color: #000; text-decoration: none; cursor: pointer;
+    }
+    
