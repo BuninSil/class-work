@@ -1,4 +1,4 @@
-function calculateShipping() {
+const calculateShipping = () => {
     const senderFirstName = document.getElementById("senderFirstName").value;
     const senderLastName = document.getElementById("senderLastName").value;
     const senderMiddleName = document.getElementById("senderMiddleName").value;
@@ -35,7 +35,7 @@ function calculateShipping() {
     modal.style.display = "block";
 }
 
-function closeModal() {
+const closeModal = () => {
     const modal = document.getElementById("modal");
     modal.style.display = "none";
 }
