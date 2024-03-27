@@ -1,0 +1,148 @@
+:root {
+    /* css - переменные */
+    --font-sans: sans-serif;
+    --color-black: #111;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+
+.wrapper { 
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+.task-form {
+    width: 100%;
+    max-width: 580px;
+    margin-inline: auto;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+
+.task-image {
+
+    background-color: transparent;
+    
+    padding-inline: 25px;
+    width: 100%;
+    height: 35px;
+    
+    
+    outline: none;
+    
+}
+
+.task-name { 
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    padding-inline: 25px;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    color: var(--color-white);
+    outline: none;
+    
+}
+.task-phone { 
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    padding-inline: 25px;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    color: var(--color-white);
+    outline: none;
+    
+}
+
+.task-street { 
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    padding-inline: 25px;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    color: var(--color-white);
+    outline: none;
+    
+}
+
+.task-comment { 
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    padding-inline: 25px;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    color: var(--color-white);
+    outline: none;
+    
+}
+
+.task-button {
+    border: none;
+    background-color: var(--color-white);
+    padding-inline: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100px;
+    
+}
+
+.task-button:disabled {
+    cursor: default;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.task-list img {
+    max-width: 150px; /* Изменяем размер изображения */
+    max-height: 150px;
+    margin-right: 10px; /* Добавляем отступ справа, чтобы текст не налезал на изображение */
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-details span {
+    margin-right: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 10px;
+    max-width: 100px; /* Измените это значение по вашему усмотрению */
+    height: auto;
+}
