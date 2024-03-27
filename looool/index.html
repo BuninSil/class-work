@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>абоба</title>
+    <script defer src="js/app.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="contanier">
+       
+        <label for="Name">Введите название:</label>
+        <input id="Name" type="text" class="input"><br><br>
+     
+        <label for="description">Введите описание:</label>
+        <input id="description" type="text" class="input"><br><br>
+  
+        <label for="code">Введите код:</label>
+        <input id="code" type="number" class="input"><br><br>
+      
+        <label for="price">Введите цену:</label>
+        <input id="price" type="number" class="input"><br><br>
+
+        <input type="file" id="image" class="task-image" accept="image/" placeholder="Выберите изображение">
+
+       
+        <label for="">Статус</label>
+        <select id="status">
+            <option value="Продано">Продано</option>
+            <option value="не продано">Не продано</option>
+        </select>
+
+        <button onclick="saveData()" class="button" id="saveBtn">Сохранить</button>
+
+        <ul class="data-list" id="dataList"></ul>
+    </div>
+</body>
+</html>
