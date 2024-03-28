@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Фамилия -->
+        <label for="lastName">Введите название:</label>
+        <input type="text" class="input" id="lastName"><br><br>
+        <!-- Имя -->
+        <label for="firstName">Введите дату:</label>
+        <input type="datetime-local" class="input" id="firstName"><br><br>
+        <!-- Отчество -->
+        <label for="middleName">Введите отчество:</label>
+        <input type="text" class="input" id="middleName"><br><br>
+        <!-- 
+        <label for="phone">Введите номер телефона:</label>
+        <input type="number" class="input" id="phone"><br><br>-->
+        <!-- Статус -->
+        <label for="">Тип</label>
+        <select id="status">
+            <option id="" value="путь">План путешествия</option>
+            <option id="" value="нига">Заметки для кНиги</option>
+        </select>
+        <!-- Кнопка -->
+        <button onclick="saveData()" class="button" id="saveBtn">Сохранить</button>
+        
+
+        <!-- Вывод -->
+        <ul class="data-list" id="dataList"></ul>
+    </div>
+</body>
+</html>
